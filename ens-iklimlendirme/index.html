@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Ens İklimlendirme</title>
-    <link rel="icon" href="./assets/deneme.png">
+    <link rel="icon" href="./assets/logo.png">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <!--header section start-->
     <header class="header">
         <a href="#" class="logo">
-            <img src="./assets/deneme.png" alt="logo">
+            <img src="./assets/logo.png" alt="logo">
         </a>
         <nav class="navbar">
             <a href="#" class="active">ANASAYFA</a>
-            <a href="#">HİZMETLERİMİZ</a>
             <a href="#">ÜRÜNLERİMİZ</a>
+            <a href="#">HİZMETLERİMİZ</a>
             <a href="#">HAKKIMIZDA</a>
             <a href="#">BLOG</a>
             <a href="#">EKLENECEK</a>
             <a href="#">İLETİŞİM</a>
         </nav>
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
-            <button>
+            <button id="cart-btn">
                 <i class="fas fa-shopping-cart"></i>
             </button>
             <button id="menu-btn">
@@ -39,6 +39,30 @@
             <i class="fas fa-search"></i>
         </div>
         <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./assets/deneme.png" alt="menu">
+                <div class="content">
+                    <h3>KART ÖĞESİ 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./assets/deneme.png" alt="menu">
+                <div class="content">
+                    <h3>KART ÖĞESİ 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="./assets/deneme.png" alt="menu">
+                <div class="content">
+                    <h3>KART ÖĞESİ 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
             <div class="cart-item">
                 <i class="fas fa-times"></i>
                 <img src="./assets/deneme.png" alt="menu">
@@ -64,7 +88,7 @@
 
     <!--menu section start-->
     <section class="menu">
-        <h1 class="heading">HİZMETLERİMİZE <span>GÖZ ATIN</span></h1>
+        <h1 class="heading">ÜRÜNLERİMİZE <span>GÖZ ATIN</span></h1>
         <div class="box-container">
             <div class="box">
                 <div class="box-head">
@@ -116,39 +140,33 @@
 
     <!--products section start-->
     <section class="menu">
-        <h1 class="heading">HİZMETLERİMİZE <span>GÖZ ATIN</span></h1>
+        <h1 class="heading">HİZMETLERİMİZ</h1>
         <div class="box-container">
-            <div class="box">
+            <div class="box box-pro">
                 <div class="box-head">
                     <img src="./assets/canal.jpg" alt="split air conditioner">
-                    <span class="menu-category">SPLİT KLİMA</span>
-                    <h3>9.000BTU</h3>
-                    <div class="price">19.999₺ <span>24.999₺</span></div>
+                    <h3>HAVALANDIRMA İŞLERİNİZ</h3>
                 </div>
                 <div class="box-bottom">
-                    <a href="#" class="btn">İncele</a>
+                    <a href="#" class="btn btn-pro">Teklif Al</a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box box-pro">
                 <div class="box-head">
-                    <img src="./assets/canal.jpg" alt="split air conditioner">
-                    <span class="menu-category">SPLİT KLİMA</span>
-                    <h3>12.000BTU</h3>
-                    <div class="price">19.999₺ <span>24.999₺</span></div>
+                    <img src="./assets/care.jpg" alt="air conditioner care">
+                    <h3>BAKIM-ONARIM</h3>
                 </div>
                 <div class="box-bottom">
-                    <a href="#" class="btn">İncele</a>
+                    <a href="#" class="btn btn-pro">Teklif Al</a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box box-pro">
                 <div class="box-head">
-                    <img src="./assets/canal.jpg" alt="split air conditioner">
-                    <span class="menu-category">SPLİT KLİMA</span>
-                    <h3>18.000BTU</h3>
-                    <div class="price">19.999₺ <span>24.999₺</span></div>
+                    <img src="./assets/ac.jpg" alt="split air conditioner">
+                    <h3>ALTYAPI-BORULAMA</h3>
                 </div>
                 <div class="box-bottom">
-                    <a href="#" class="btn">İncele</a>
+                    <a href="#" class="btn btn-pro">Teklif Al</a>
                 </div>
             </div>
         </div>
@@ -306,18 +324,13 @@
             <a href="#">İLETİŞİM</a>
         </div>
         <div class="credit">
-            <span>Muhammet Yazılım</span> Tarafından Geliştirilmiştir
+            <a href="https://www.instagram.com/mamiteg"><span>MAMITEND</span></a> Tarafından  Geliştirilmiştir
         </div>
     </section>
-
-
-
-
-
-
-
-
-
     <!--footer section end-->
+
+    <script src="./js/script.js">
+
+    </script>
 </body>
 </html>
